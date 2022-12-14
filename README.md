@@ -1,1 +1,1 @@
-# https://roman121082.github.io//aibolit/app/
+# https://roman121082.github.io/aibolit/app/
