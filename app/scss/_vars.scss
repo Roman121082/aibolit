@@ -1,0 +1,118 @@
+// $accent: #fe3e57;
+$default: #7b7b7b;
+$title: #080606;
+$accent: #FFC59E;
+// $bg: #f6f6f6;
+$hover: #59443F;
+
+
+
+%school-700 {
+  font-family: 'CenturySchoolbookPro-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%school-400 {
+  font-family: 'CenturySchoolbookPro', sans-serif;
+  font-weight: 400;
+}
+
+%futura-400 {
+  font-family: 'FuturaNewBook-Reg', sans-serif;
+  font-weight: 400;
+}
+
+%futura-500 {
+  font-family: 'FuturaNewMedium-Reg', sans-serif;
+  font-weight: 500;
+}
+
+%futura-700 {
+  font-family: 'FuturaNewBold-Reg', sans-serif;
+  font-weight: 700;
+}
+
+
+
+%dmsans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 700;
+}
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%roboto-400 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%nexa-400 {
+  font-family: 'nexa-script-light', sans-serif;
+  font-weight: 400;
+}
+
+%nexa-500 {
+  font-family: 'nexa-script', sans-serif;
+  font-weight: 500;
+}
+
+%nexa-700 {
+  font-family: 'nexa-script-heavy', sans-serif;
+  font-weight: 700;
+}
+
+%code-700 {
+  font-family: 'CODE Bold', sans-serif;
+  font-weight: 700;
+}
+
+%code-300 {
+  font-family: 'CODE Light', sans-serif;
+  font-weight: 300;
+}
+
+// %btn {
+//   padding: 12px 26px;
+//   text-transform: uppercase;
+//   color: #fff;
+//   background-color: $accent-color;
+//   box-shadow: 0px 7px 20px rgba(255, 17, 48, 0.3);
+//   @extend %roboto-400;
+//   cursor: pointer;
+// }
+
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{a}n(#{$numbers});
+}

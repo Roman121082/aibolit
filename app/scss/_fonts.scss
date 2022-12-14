@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'CenturySchoolbookPro';
+  font-weight: 400;
+  font-style: normal;
+  src: local('CenturySchoolbookPro'),
+    url('../fonts/SchoolBook/CenturySchoolbookPro.woff2') format('woff2'),
+    url('../fonts/SchoolBook/CenturySchoolbookPro.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CenturySchoolbookPro-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CenturySchoolbookPro-Bold'),
+    url('../fonts/SchoolBook/CenturySchoolbookPro-Bold.woff2') format('woff2'),
+    url('../fonts/SchoolBook/CenturySchoolbookPro-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaNewBook-Reg';
+  font-weight: 400;
+  font-style: normal;
+  src: local('FuturaNewBook-Reg'),
+    url('../fonts/FuturaNew/FuturaNewBook-Reg.woff2') format('woff2'),
+    url('../fonts/FuturaNew/FuturaNewBook-Reg-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaNewMedium-Reg';
+  font-weight: 500;
+  font-style: normal;
+  src: local('FuturaNewMedium-Reg'),
+    url('../fonts/FuturaNew/FuturaNewMedium-Reg.woff2') format('woff2'),
+    url('../fonts/FuturaNew/FuturaNewMedium-Reg-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaNewBold-Reg';
+  font-weight: 700;
+  font-style: normal;
+  src: local('FuturaNewBold-Reg'),
+    url('../fonts/FuturaNew/FuturaNewBold-Reg.woff2') format('woff2'),
+    url('../fonts/FuturaNew/FuturaNewBold-Reg-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('DMSans-Regular'),
+    url('../fonts/DMSans-Regular.woff') format('woff2'),
+    url('../fonts/DMSans-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('DMSans-Medium'),
+    url('../fonts/DMSans-Medium.woff') format('woff2'),
+    url('../fonts/DMSans-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('DMSans-Bold'),
+    url('../fonts/DMSans-Bold.woff') format('woff2'),
+    url('../fonts/DMSans-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Rubik-Regular'),
+    url('../fonts/Rubik-Regular.woff') format('woff2'),
+    url('../fonts/Rubik-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Rubik-Medium'),
+    url('../fonts/Rubik-Medium.woff') format('woff2'),
+    url('../fonts/Rubik-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'nexa-script-light';
+  font-weight: 400;
+  font-style: normal;
+  src: local('nexa-script-light'),
+    url('../fonts/nexa-script-light.woff') format('woff2'),
+    url('../fonts/nexa-script-light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'nexa-script';
+  font-weight: 500;
+  font-style: italic;
+  src: local('nexa-script'),
+    url('../fonts/nexa-script.woff') format('woff2'),
+    url('../fonts/nexa-script.woff') format('woff');
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'nexa-script-heavy';
+  font-weight: 700;
+  font-style: normal;
+  src: local('nexa-script-light'),
+    url('../font/nexa-script-heavy.woff') format('woff2'),
+    url('../fonts/nexa-script-heavy.woff') format('woff');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'CODE Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('CODE Bold'),
+    url('../font/CODE Bold.woff') format('woff2'),
+    url('../fonts/CODE Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CODE Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('CODE Light'),
+    url('../font/CODE Light.woff') format('woff2'),
+    url('../fonts/CODE Light.woff') format('woff');
+  font-display: swap;
+}
+
+
+// @font-face {
+//   font-family: 'Quicksand-Regular';
+//   font-weight: 400;
+//   font-style: normal;
+//   src: local('Quicksand-Regular'),
+//     url('../fonts/Quicksand-Regular.woff') format('woff2'),
+//     url('../fonts/Quicksand-Regular.woff') format('woff');
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Quicksand-Medium';
+//   font-weight: 500;
+//   font-style: normal;
+//   src: local('Quicksand-Medium'),
+//     url('../fonts/Quicksand-Medium.woff') format('woff2'),
+//     url('../fonts/Quicksand-Medium.woff') format('woff');
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Roboto-Regular'),
+    url('../fonts/Roboto-Regular.woff') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'Roboto-Bold';
+//   font-weight: 700;
+//   font-style: normal;
+//   src: local('Roboto-Bold'),
+//     url('../fonts/Roboto-Bold.woff') format('woff2'),
+//     url('../fonts/Roboto-Bold.woff') format('woff');
+//   font-display: Bold;
+// }
