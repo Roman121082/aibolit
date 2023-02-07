@@ -1,9 +1,9 @@
 
 $(function () {
 
-  $('.burger').on('click', function () {
-    $('.burger__menu-list').toggleClass('burger__menu-list--active')
-  });
+  // $('.burger').on('click', function () {
+  //   $('.burger__menu-list').toggleClass('burger__menu-list--active')
+  // });
 
   $('.top-slider').slick({
     fade: true,
@@ -15,7 +15,9 @@ $(function () {
     pauseOnHover: false,
   });
 
-
+  // $('.burger__btn').on('click', function () {
+  //   $('.burger-mobile__list').toggleClass('burger-mobile__list--active')
+  // });
 
 
   // $('.tabs').on('click', function (e) {

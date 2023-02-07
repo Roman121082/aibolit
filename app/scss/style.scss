@@ -48,7 +48,9 @@
   }
 }
 
-.geo {}
+.geo {
+  color: $accent;
+}
 
 
 .top-slider {
@@ -200,6 +202,12 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 
+  &:hover {
+    svg path {
+      fill: #59443F;
+    }
+  }
+
   &__title {
     @extend %school-400;
     font-size: 30px;
@@ -229,11 +237,7 @@
     }
   }
 
-  &__img:hover {
-    svg path {
-      fill: #59443F;
-    }
-  }
+
 }
 
 

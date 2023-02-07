@@ -3,9 +3,6 @@ body {
   color: #59443F;
 }
 
-
-
-
 .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -15,6 +12,76 @@ body {
 .title {
   color: #080606
 }
+
+.burger {
+  z-index: 2;
+  position: absolute;
+
+
+  &__btn {
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  &__btn-line {
+    background: #000;
+    border-radius: 3px;
+    height: 3px;
+    width: 34px;
+    margin: 8px 0;
+  }
+}
+
+.burger-mobile {
+  &__list {
+    padding: 20px;
+    position: absolute;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.8;
+    background-color: #59443F;
+    transform: translateY(-120%);
+    z-index: 2;
+    transition: all 0.6s;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__list.active {
+    transform: translateY(130%);
+  }
+
+
+
+  &__item {}
+
+  &__item+&__item {
+    margin-top: 20px;
+  }
+
+  &__link {}
+}
+
+
+.burger__btn-line--1.active {
+  transform: translateY(11px) rotate(-45deg);
+}
+
+.burger__btn-line--2.active {
+  display: none;
+}
+
+.burger__btn-line--3.active {
+  transform: rotate(45deg);
+}
+
 
 
 // &__item-link {
