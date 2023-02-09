@@ -15,8 +15,14 @@ body {
 
 .burger {
   z-index: 2;
+  display: none;
   position: absolute;
-
+  width: 34px;
+  height: 41px;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: 0 auto;
 
   &__btn {
     display: block;
@@ -38,7 +44,7 @@ body {
   &__list {
     padding: 20px;
     position: absolute;
-    width: 500px;
+    max-width: 500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -55,18 +61,17 @@ body {
   }
 
   &__list.active {
-    transform: translateY(130%);
+    transform: translateY(100%);
   }
 
 
 
-  &__item {}
 
   &__item+&__item {
     margin-top: 20px;
   }
 
-  &__link {}
+
 }
 
 
