@@ -5,7 +5,7 @@ $(function () {
   //   $('.burger__menu-list').toggleClass('burger__menu-list--active')
   // });
 
-  $('.top-slider').slick({
+  $('.top-slider__inner').slick({
     fade: true,
     arrows: false,
     autoplay: true,
