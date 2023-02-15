@@ -64,14 +64,9 @@ body {
     transform: translateY(100%);
   }
 
-
-
-
   &__item+&__item {
     margin-top: 20px;
   }
-
-
 }
 
 
@@ -96,3 +91,114 @@ body {
 //     }
 //   }
 // }
+
+//===================================================================
+
+.tabs-block {
+  margin: 0px 0px 50px 0px;
+
+  // .tabs-block__nav
+  &__nav {
+    display: flex;
+    margin: 0px -2px;
+  }
+
+  // .tabs-block__item
+  &__item {
+    flex: 0 1 33.333%;
+    margin: 0px 2px;
+    background-color: #7a956b;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &._active {
+      background-color: #77608d;
+    }
+  }
+
+  // .tabs-block__body
+  &__body {
+    padding: 20px 0px 0px 0px;
+  }
+
+  // .tabs-block__block
+  &__block {
+    display: none;
+
+    &._active {
+      display: block;
+    }
+  }
+}
+
+//============================================================================
+
+.spollers-block {
+  margin: 0px 0px 50px 0px;
+
+  // .spollers-block__item
+  &__item {
+    margin: 0px 0px 20px 0px;
+
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  // .spollers-block__title
+  &__title {
+    background-color: #794f45;
+    cursor: pointer;
+    padding: 20px 70px 20px 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 20px;
+      background-color: #fff;
+      height: 2px;
+      transition: transform 0.3s ease 0s;
+      transform: translate(0, -50%) rotate(-45deg);
+      position: absolute;
+      right: 15px;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 20px;
+      background-color: #fff;
+      height: 2px;
+      transition: transform 0.3s ease 0s;
+      transform: translate(0, -50%) rotate(45deg);
+      position: absolute;
+      right: 29px;
+      top: 50%;
+    }
+
+    &._active {
+      &::before {
+        transform: translate(0, -50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(0, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  // .spollers-block__body
+  &__body {
+    display: none;
+    padding: 20px 0px 0px 0px;
+
+    &._active {
+      display: block;
+    }
+  }
+}
+
+//======================================================================

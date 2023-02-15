@@ -3,6 +3,7 @@
 @import "reset";
 @import "libs";
 @import "mixins";
+@import "popup";
 @import "global";
 
 .header {
@@ -22,6 +23,11 @@
   font-size: 20px;
   line-height: 20px;
   color: #C3B9B5;
+}
+
+
+.kote {
+  width: 480px;
 }
 
 .logo {
@@ -251,9 +257,6 @@
 
 
 }
-
-
-
 
 
 @import "media";
