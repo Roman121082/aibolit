@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="icon" href="data:;base64,=">
+  <link href="
+https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
+" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -28,7 +31,7 @@
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="">
-          <img class="logo__img" src="images/logo.png" alt="">
+          <img class="logo__img" src="images/logo.png" alt="логотип">
         </a>
 
         <div class="burger">
@@ -58,7 +61,16 @@
             </li>
           </ul>
         </nav>
-        <div class="geo">ВОЛГОГРАД</div>
+        <div class="geo">
+          <div class="form__line">
+            <select name="form[]" class="form">
+              <option value="1" selected="selected">Волгоград</option>
+              <option value="2">Москва</option>
+              <option value="3">Челябинск</option>
+              <option value="4">Самара</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -166,7 +178,7 @@
     </div>
   </section>
 
-  <!-- <div class="directions">
+  <div class="directions">
     <div class="container">
       <div class="directions__inner">
         <a class="directions-item">
@@ -427,8 +439,183 @@
         </a>
       </div>
     </div>
-  </div> -->
+  </div>
+  <section class="story">
 
+  </section>
+  <section class="about">
+    <div class="about__container">
+      <div class="about-info">
+        <p class="about-info__text">
+          1 150 000 <span>
+            питомцам мы помогли
+            за 18 лет работы
+          </span>
+        </p>
+        <img class="about-info__img" src="images/bird.png" alt="птица">
+      </div>
+      <h3 class="about-title title">
+        Почему хозяева выбирают нас?
+      </h3>
+      <div class="about-box">
+        <ul class="about-list">
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Работаем круглосуточно
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/1.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Мы готовы в любое время суток принять домашних питомцев и их хозяев
+              </p>
+            </div>
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Широкий спектр услуг
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/2.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Кроме широкопрофильных докторов в клинике развиты узкие направления в ветеринарии – офтальмология,
+                стоматология, дерматология, травматология, ортопедия и онкология
+              </p>
+            </div>
+
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Большой опыт
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/3.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                30 высококвалифицированных врачей нашей клиники предоставляют ветеринарную помощь уже на протяжении 18
+                лет!
+              </p>
+            </div>
+
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Собственная лаборатория
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/4.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Оборудованная профессиональным оснащением производства компании IDEXX International Inc.(США), которое
+                позволяет получить результаты исследования прямо на приеме
+              </p>
+            </div>
+
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Оснащенные стационары
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/5.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Обычный и инфекционный стационар с индивидуальным подогревом каждой клетки. Для питомцев в критическом
+                состоянии предусмотрены кислородные камеры
+              </p>
+            </div>
+
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Новейшее оборудование
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/6.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Помимо лабораторного оборудования и цифрового рентгена в клинике используется современный эндоскоп KARL
+                STORZ
+              </p>
+            </div>
+
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Запись на прием онлайн
+            </p>
+            <p class="about-list__text">
+              Запись на приём позволяет избежать ожиданий в очереди, но если вы не можете приехать - мы выезжаем на дом!
+            </p>
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Аптека и зоомагазин
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/8.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Для удобства в клинике предусмотрен аптечный пункт, а также бутик с одеждой и косметическими средствами
+                для ухода за домашними любимцами
+              </p>
+            </div>
+
+          </li>
+          <li class="about-list__item">
+            <p class="about-list__title">
+              Груминг-салон
+            </p>
+            <div class="about-list__item-box">
+              <img src="images/about/9.png" alt="" class="about-list__img">
+              <p class="about-list__text">
+                Отдельный кабинет для проведения гигиенческих и косметических процедур, таких как мытьё и сушка, стрижка
+                или тримминг, уход за ушами, глазами и когтями и многое другое
+              </p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <section class="application">
+    <p class="application-text">скоро</p>
+    <h3 class="application-title">
+      Удобное приложение для питомцев и их хозяев
+    </h3>
+    <div class="application-box">
+      <img src="images/application/1.png" alt="" class="application-box__img1">
+      <img src="images/application/2.png" alt="" class="application-box__img">
+    </div>
+    <img src="images/application/3.png" alt="" class="application-img3">
+    <img src="images/application/4.png" alt="" class="application-img4">
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <h3 class="contacts-title">Контакты</h3>
+      <div class="contacts-box">
+        <div class="contacts-info">
+          <h4 class="contacts-info__title">Айболит на Краснополянской</h4>
+          <ul class="contacts-list">
+            <li class="contacts-item  contacts-item__address">Дзержинский район,
+              ул. Краснополянская, 30</li>
+            <li class="contacts-item contacts-item__tel"><a href="tel:962292" class="contacts-item__link">96 22 92</a>
+            </li>
+            <li class="contacts-item contacts-item__time">Круглосуточно</li>
+          </ul>
+          <h4 class="contacts-info__title contacts-info__title--1">Айболит на Тулака</h4>
+          <ul class="contacts-list">
+            <li class="contacts-item contacts-item__address">Советский район,
+              ул. Карла Маркса, 7</li>
+            <li class="contacts-item contacts-item__tel"><a href="tel:962292" class="contacts-item__link">96 22 92</a>
+            </li>
+            <li class="contacts-item contacts-item__time">Круглосуточно</li>
+          </ul>
+        </div>
+        <div class="contacts-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d168509.49187761173!2d44.500528!3d48.706230000000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1678028740527!5m2!1sru!2sru"
+            width="950" height="530" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- andrikanich -->
   <div class="wrapper">
     <main class="page">
@@ -442,146 +629,20 @@
             minima porro saepe quas cum. Debitis possimus eligendi tempora explicabo, quisquam cum numquam distinctio
             doloremque ducimus?
           </div>
-        </div>
+        </div> -->
 
-        <div class="page__body">
-          <div class="tabs-block _scr-item _tabs">
-            <nav class="tabs-block__nav">
-              <div class="tabs-block__item _tabs-item _active">Таб №1</div>
-              <div class="tabs-block__item _tabs-item">Таб №2</div>
-              <div class="tabs-block__item _tabs-item">Таб №3</div>
-            </nav>
-            <div class="tabs-block__body">
-              <div class="tabs-block__block _tabs-block _active">
-                1212221
-              </div>
-              <div class="tabs-block__block _tabs-block">
-                22222222
-              </div>
-              <div class="tabs-block__block _tabs-block">
-                3333333333
-              </div>
-            </div>
+          <div class="page__body">
+
+            <!-- <h1> Жми на кота</h1>
+
+            <a href="#video" data-video="TApQxW9YGnk" class="_popup-link"><img class="kote" src="images/kote.jpeg"
+                alt=""></a> -->
           </div>
-
-          <div class="spollers-block _scr-item _spollers _one">
-            <div class="spollers-block__item">
-              <div class="spollers-block__title _spoller">Я вопрос</div>
-              <div class="spollers-block__body">
-                Я ответ Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut asperiores nesciunt nobis vel
-                nihil, quibusdam error sunt accusamus dolore quisquam architecto maiores. Qui consectetur corporis sit
-                quae inventore culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut asperiores
-                nesciunt nobis vel nihil, quibusdam error sunt accusamus dolore quisquam architecto maiores. Qui
-                consectetur corporis sit quae inventore culpa!
-              </div>
-            </div>
-            <div class="spollers-block__item">
-              <div class="spollers-block__title _spoller">Я вопрос</div>
-              <div class="spollers-block__body">
-                Я ответ Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut asperiores nesciunt nobis vel
-                nihil, quibusdam error sunt accusamus dolore quisquam architecto maiores. Qui consectetur corporis sit
-                quae inventore culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut asperiores
-                nesciunt nobis vel nihil, quibusdam error sunt accusamus dolore quisquam architecto maiores. Qui
-                consectetur corporis sit quae inventore culpa!
-              </div>
-            </div>
-            <div class="spollers-block__item">
-              <div class="spollers-block__title _spoller">Я вопрос</div>
-              <div class="spollers-block__body">
-                Я ответ Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut asperiores nesciunt nobis vel
-                nihil, quibusdam error sunt accusamus dolore quisquam architecto maiores. Qui consectetur corporis sit
-                quae inventore culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut asperiores
-                nesciunt nobis vel nihil, quibusdam error sunt accusamus dolore quisquam architecto maiores. Qui
-                consectetur corporis sit quae inventore culpa!
-              </div>
-            </div>
-          </div>
-
-
-          <form action="#" class="form _scr-item">
-            <div class="form__line">
-              <label for="inp" class="form__label">Подпись поля</label>
-              <input id="inp" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Подпись поля"
-                class="input _date">
-            </div>
-            <div class="form__line">
-              <select name="form[]" class="form">
-                <option value="1" selected="selected">Пункт №1</option>
-                <option value="2">Пункт №2</option>
-                <option value="3">Пункт №3</option>
-                <option value="4">Пункт №4</option>
-              </select>
-            </div>
-            <div class="form__line">
-              <div class="quantity">
-                <div class="quantity__button quantity__button_plus"></div>
-                <div class="quantity__input">
-                  <input autocomplete="off" type="text" name="form[]" value="1">
-                </div>
-                <div class="quantity__button quantity__button_minus"></div>
-              </div>
-            </div>
-            <div class="form__line">
-              <div class="price">
-                <div class="price__range"></div>
-                <div class="price__inputs">
-                  <input id="price-start" autocomplete="off" type="text" name="form[]" class="input">
-                  <input id="price-end" autocomplete="off" type="text" name="form[]" class="input">
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="form__btn btn">Задать вопрос</button>
-          </form>
-          <div class="slider _scr-item _swiper">
-            <div class="slider__slide">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio, inventore harum nesciunt enim
-              quibusdam sapiente quisquam dolor non tempore voluptates, at, totam eos delectus corrupti fugiat in
-              numquam
-              nam.
-            </div>
-            <div class="slider__slide">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio, inventore harum nesciunt enim
-              quibusdam sapiente quisquam dolor non tempore voluptates, at, totam eos delectus corrupti fugiat in
-              numquam
-              nam.
-            </div>
-            <div class="slider__slide">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio, inventore harum nesciunt enim
-              quibusdam sapiente quisquam dolor non tempore voluptates, at, totam eos delectus corrupti fugiat in
-              numquam
-              nam.
-            </div>
-          </div> -->
-          <h1> Жми на кота</h1>
-
-          <a href="#video" data-video="TApQxW9YGnk" class="_popup-link"><img class="kote" src="images/kote.jpeg"
-              alt=""></a>
-
-          <!-- <div class="gallery-block _scr-item _gallery">
-        <a href="img/01.jpg" class="gallery-block__item">
-          <img src="img/01.jpg" alt="">
-        </a>
-        <a href="img/02.jpg" class="gallery-block__item">
-          <img src="img/02.jpg" alt="">
-        </a>
-        <a href="img/03.jpg" class="gallery-block__item">
-          <img src="img/03.jpg" alt="">
-        </a>
-        <a href="img/04.jpg" class="gallery-block__item">
-          <img src="img/04.jpg" alt="">
-        </a>
-        <a href="img/05.jpg" class="gallery-block__item">
-          <img src="img/05.jpg" alt="">
-        </a>
-      </div> -->
-
-
         </div>
       </div>
   </div>
-  </div>
 
-  <div class="popup popup_callback">
+  <!-- <div class="popup popup_callback">
     <div class="popup__content">
       <div class="popup__body">
         <div class="popup__close"></div>
@@ -599,9 +660,87 @@
         <div class="popup__video _video"></div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer-nav">
+          <div class="footer__logo">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo1.png" alt="логотип">
+            </a>
+          </div>
+          <ul class="footer-nav__list">
+            <li>
+              <p class="fotter-title">Айболит
+                <span>ветеринарная клиника</span>
+              </p>
+            </li>
+            <li><a href="#">Политика конфиденциальности в отношении обработки персональных данных</a></li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги и цены</a></li>
+            <li><a href="#">История компании</a></li>
+            <li><a href="#">Наши специалисты</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Реквизиты</a></li>
+            <li><a href="#">Онлайн-оплата</a></li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Груминг-салон</a></li>
+            <li><a href="#">Косметика</a></li>
+            <li><a href="#">Новости и акции</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+
+        </div>
+        <div class="foter-social">
+          <div class="footer-box">
+            <img src="images/footer/app.png" alt="" class="footer-box__app">
+            <img src="images/footer/play.png" alt="" class="footer-box__play">
+          </div>
+          <div class="footer__social-grup">
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a href="" class="footer__social-link" href="#">
+                  <img src="images/footer/inst.svg" alt="">
+                </a></li>
+              <li class="footer__social-item"><a href="" class="footer__social-link" href="#">
+                  <img src="images/footer/fb.svg" alt="">
+                </a></li>
+              <li class="footer__social-item"><a href="" class="footer__social-link" href="#">
+                  <img src="images/footer/vk.svg" alt="">
+                </a></li>
+              <li class="footer__social-item"><a href="" class="footer__social-link" href="#">
+                  <img src="images/footer/youtube.svg" alt="">
+                </a></li>
+            </ul>
+          </div>
+          <ul class="footer-mail__list">
+            <li class="footer-mail__item">aibolit34.ru</li>
+            <li class="footer-mail__item">aibolit34@gmail.com</li>
+          </ul>
+          <div class="copyrite">
+            <ul class="copyrite-list">
+              <li class="copyrite-list__item">Made with</li>
+              <li class="copyrite-list__item">
+                <img src="/images/footer/heart.svg" alt="">
+              </li>
+              <li class="copyrite-list__item">from UnitBean</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
-<script src="js/functions.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js
+"></script>
 <script src="js/main.min.js"></script>
 
 </html>

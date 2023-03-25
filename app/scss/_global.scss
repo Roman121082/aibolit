@@ -9,8 +9,17 @@ body {
   padding: 0 10px;
 }
 
+.about__container {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .title {
-  color: #080606
+  @extend %school-400;
+  color: #080606;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .burger {
