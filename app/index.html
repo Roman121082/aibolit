@@ -61,16 +61,43 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
             </li>
           </ul>
         </nav>
+
         <div class="geo">
-          <div class="form__line">
+          <!-- <div class="form__line">
             <select name="form[]" class="form">
               <option value="1" selected="selected">Волгоград</option>
               <option value="2">Москва</option>
               <option value="3">Челябинск</option>
               <option value="4">Самара</option>
             </select>
+          </div> -->
+
+
+          <!-- <div class="form-group">
+            <div class="select-wrapper">
+              <select name="select-category" id="" class="select">
+                <option value="1">Волгоград</option>
+                <option value="2">Москва</option>
+                <option value="3">Челябинск</option>
+                <option value="4">Самара</option>
+              </select>
+            </div>
+          </div> -->
+
+          <div class="form-group">
+            <div class="dropdown">
+              <button class="dropdown__button">Волгоград</button>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="travel">Волгоград</li>
+                <li class="dropdown__list-item" data-value="lessons">Москва</li>
+                <li class="dropdown__list-item" data-value="photo">Челябинск</li>
+                <li class="dropdown__list-item" data-value="sport">Самара</li>
+              </ul>
+              <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </header>
