@@ -1,13 +1,25 @@
-@import "vars";
 @import "fonts";
+@import "vars";
 @import "reset";
 @import "libs";
 @import "mixins";
 @import "popup";
-@import "forms";
 @import "ui";
 @import "select";
+@import "forms";
+@import "quantity";
+@import "tabs";
+@import "spollers";
+@import "popup";
+@import "modal";
+@import "radio_chek_sel";
 @import "global";
+
+
+.header {
+  margin-top: 30px;
+  position: relative;
+}
 
 .header__inner {
   display: flex;
@@ -22,18 +34,23 @@
 .logo {
   &__img {
     display: inline-block;
+    min-width: 80px;
+    min-height: 63px;
   }
 }
 
 .header-menu {
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 15px;
+
   }
 
-  &__item+&__item {
-    margin-left: 80px;
-  }
+  // &__item+&__item {
+  //   margin-left: 80px;
+  // }
 
   &__link {
     transition: all 0.4s;
@@ -44,34 +61,104 @@
   }
 }
 
-.select__options {
-  color: $accent;
-  @extend %futura-700;
-  font-size: 20px;
-  line-height: 20px;
+.card {
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+
+  &__close {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
 }
 
-.select__value {
-  color: $accent;
-  @extend %futura-700;
+
+.btn-outline-primary {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFC59E;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+
+.card-header {
+  padding-top: 45px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 40px;
+  @extend %school-400;
+
+}
+
+.choice-city {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   line-height: 20px;
+  @extend %futura-400;
+  gap: 17px;
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__item:hover {
+    color: #FFC59E;
+  }
 }
+
 
 .geo {
-  padding-left: 30px;
+  flex-basis: 190px;
+  padding-left: 50px;
+  position: relative;
+
 }
 
+.geo button {
+  transition: all 0.3s;
+}
+
+.geo button:hover {
+  letter-spacing: 1px;
+}
+
+
+.geo::before {
+  content: "";
+  background-image: url(../images/icons/location.svg);
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 20px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .top-slider {
   position: relative;
-  margin-bottom: 100px;
+  @include adaptiv-value (margin-bottom, 130, 50, 1);
 
 
   &__item {
     display: flex !important;
     justify-content: space-between;
-    height: calc(100vh - 103px);
+    height: calc(100vh - 96px);
   }
 
   &__item-content {
@@ -80,22 +167,37 @@
 
   &__title {
     @include adaptiv-font (60, 30, 1);
+    @include adaptiv-value (padding-top, 160, 10, 1);
+    @include adaptiv-value (padding-left, 225, 10, 1);
     @extend %school-400;
     line-height: 1.1;
     max-width: 750px;
-    padding-top: 160px;
-    padding-left: 255px;
   }
 
 
-  &__img {
-    max-height: 835px;
+  &__imgbox {
+    display: flex;
+    align-items: flex-end;
+    @include adaptiv-value (height, 750, 390, 1);
+    @include adaptiv-value (width, 900, 300, 1);
     align-self: end;
-    object-fit: cover;
+    // overflow: hidden;
+    // position: relative;
   }
+
+  &__imgbox img {
+    height: 100%;
+    width: 100%;
+    // object-fit: cover;
+    // object-position: top;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  }
+
 
   &__btn {
-    margin-bottom: 80px;
+    margin-bottom: 200px;
     padding: 20px 75px;
     border-radius: 33px;
     background-color: $accent;
@@ -121,7 +223,7 @@
     margin: 0 auto;
     padding-left: 245px;
     position: absolute;
-    bottom: 30px;
+    bottom: 80px;
     max-width: 1500px;
   }
 
@@ -142,6 +244,7 @@
     line-height: 30px;
     color: $hover;
     cursor: pointer;
+    margin-right: 80px;
   }
 
   &__social-item+&__social-item {
@@ -188,7 +291,7 @@
 }
 
 .directions {
-  margin-bottom: 100px;
+  @include adaptiv-value (margin-bottom, 130, 50, 1);
   display: flex;
   justify-content: center;
 
@@ -251,8 +354,8 @@
 
 
 .about {
-  padding-top: 150px;
-  margin-bottom: 200px;
+  padding-top: 70px;
+  @include adaptiv-value (margin-bottom, 130, 50, 1);
   display: flex;
   justify-content: center;
 }
@@ -264,26 +367,38 @@
   margin: 0 auto 250px;
 
 
+
   &__text {
     color: #59443F;
     @extend %school-700;
+    @include adaptiv-font (144, 60, 1);
+    @include adaptiv-value (padding-bottom, 20, 7, 1);
     font-size: 144px;
-    line-height: 110px;
+    line-height: 0.76;
     padding-bottom: 20px;
   }
 
   &__img {
     position: absolute;
-    bottom: -137px;
-    right: 30px;
+    bottom: -110px;
+    @include adaptiv-value (right, -10, 300, 1);
+
+    @media(max-width: 670px) {
+      @include adaptiv-value (right, -10, 10, 1);
+    }
+
+    @media(max-width: 600px) {
+      bottom: -194px;
+    }
   }
 }
 
 .about-info span {
   display: block;
   @extend %futura-400;
+  @include adaptiv-font (80, 40, 1);
   font-size: 80px;
-  line-height: 110px;
+  line-height: 1.37;
   color: #080606;
 }
 
@@ -297,8 +412,22 @@
   grid-template-columns: repeat(3, minmax(290px, 490px));
   gap: 70px 94px;
 
+
+  @media (max-width: 1740px) {
+    grid-template-columns: repeat(2, minmax(290px, 550px));
+  }
+
+  @media (max-width: 880px) {
+    grid-template-columns: repeat(1, minmax(290px, 550px));
+    margin: 0 auto;
+  }
+
   &__item-box {
     display: flex;
+
+    @media (max-width: 390px) {
+      display: block;
+    }
   }
 
   &__title {
@@ -327,6 +456,7 @@
 }
 
 .application {
+  @include adaptiv-value (margin-bottom, 130, 50, 1);
   background-color: #FFC59E;
   padding-top: 250px;
   padding-left: 230px;
@@ -377,7 +507,7 @@
 
 
 .contacts {
-  padding-top: 235px;
+  @include adaptiv-value (margin-bottom, 130, 50, 1);
 }
 
 .contacts-title {
@@ -495,3 +625,6 @@
   align-items: center;
   gap: 4px;
 }
+
+
+@import "media";
