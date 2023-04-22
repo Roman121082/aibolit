@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'CenturySchoolbookPro';
+  font-family: 'CenturySchoolbook-Regular';
   font-weight: 400;
   font-style: normal;
-  src: local('CenturySchoolbookPro'),
-    url('../fonts/SchoolBook/CenturySchoolbookPro.woff2') format('woff2'),
-    url('../fonts/SchoolBook/CenturySchoolbookPro.woff') format('woff');
+  src: local('CenturySchoolbook-Regular'),
+    url('../fonts/SchoolBook/CenturySchoolbook-Regular.woff2') format('woff2'),
+    url('../fonts/SchoolBook/CenturySchoolbook-Regular.woff') format('woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CenturySchoolbookPro-Bold';
+  font-family: 'CenturySchoolbook-Bold';
   font-weight: 700;
   font-style: normal;
-  src: local('CenturySchoolbookPro-Bold'),
-    url('../fonts/SchoolBook/CenturySchoolbookPro-Bold.woff2') format('woff2'),
-    url('../fonts/SchoolBook/CenturySchoolbookPro-Bold.woff') format('woff');
+  src: local('CenturySchoolbook-Bold'),
+    url('../fonts/SchoolBook/CenturySchoolbook-Bold.woff2') format('woff2'),
+    url('../fonts/SchoolBook/CenturySchoolbook-Bold.woff') format('woff');
   font-display: swap;
 }
 
