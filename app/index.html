@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Aibolit</title>
   <link rel="icon" href="data:;base64,=">
   <link href="
 https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
@@ -31,7 +31,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="">
-          <img class="logo__img" src="images/logo.png" alt="логотип">
+          <img class="logo__img" src="images/logo.svg" alt="логотип">
         </a>
 
         <div class="burger">
@@ -41,7 +41,6 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
             <div class="burger__btn-line burger__btn-line--3"></div>
           </button>
         </div>
-
         <nav class="header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item">
@@ -63,94 +62,70 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
         </nav>
 
         <div class="geo">
-          <!-- <div class="form__line">
-            <select name="form[]" class="form">
-              <option value="1" selected="selected">Волгоград</option>
-              <option value="2">Москва</option>
-              <option value="3">Челябинск</option>
-              <option value="4">Самара</option>
-            </select>
-          </div> -->
-
-
-          <!-- <div class="form-group">
-            <div class="select-wrapper">
-              <select name="select-category" id="" class="select">
-                <option value="1">Волгоград</option>
-                <option value="2">Москва</option>
-                <option value="3">Челябинск</option>
-                <option value="4">Самара</option>
-              </select>
-            </div>
-          </div> -->
-
-          <div class="form-group">
-            <div class="dropdown">
-              <button class="dropdown__button">Волгоград</button>
-              <ul class="dropdown__list">
-                <li class="dropdown__list-item" data-value="travel">Волгоград</li>
-                <li class="dropdown__list-item" data-value="lessons">Москва</li>
-                <li class="dropdown__list-item" data-value="photo">Челябинск</li>
-                <li class="dropdown__list-item" data-value="sport">Самара</li>
-              </ul>
-              <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-            </div>
-          </div>
+          <button data-modal-button="modal-1" class="btn btn-outline-primary mb-1" type="button">
+            Волгоград
+          </button>
         </div>
+
+
 
       </div>
     </div>
   </header>
   <section class="top-slider">
     <div class="container">
-      <div class="top-slider__inner">
-        <div class="top-slider__item">
-          <div class="top-slider__item-content">
-            <h1 class="top-slider__title title">
-              Айболит круглосуточная ветклиника
-            </h1>
+      <div class="top-slider__wrapper">
+        <div class="top-slider__inner">
+          <div class="top-slider__item">
+            <div class="top-slider__item-content">
+              <h1 class="top-slider__title title">
+                Айболит круглосуточная ветклиника
+              </h1>
+            </div>
+            <div class="top-slider__imgbox">
+              <img class="top-slider__img" src="images/slider/1.png" alt="sliderimg">
+            </div>
           </div>
-          <img class="top-slider__img" src="images/slider/1.png" alt="sliderimg">
-        </div>
-        <div class="top-slider__item">
-          <div class="top-slider__item-content">
-            <h1 class="top-slider__title title">
-              Комфортные оборудованные стационары
-            </h1>
+          <div class="top-slider__item">
+            <div class="top-slider__item-content">
+              <h1 class="top-slider__title title">
+                Комфортные оборудованные стационары
+              </h1>
+            </div>
+            <div class="top-slider__imgbox">
+              <img class="top-slider__img" src="images/slider/2.png" alt="sliderimg">
+            </div>
           </div>
-          <img class="top-slider__img" src="images/slider/2.png" alt="sliderimg">
-        </div>
-        <div class="top-slider__item">
-          <div class="top-slider__item-content">
-            <h1 class="top-slider__title title">
-              Новейшее европейское оборудование
-            </h1>
+          <div class="top-slider__item">
+            <div class="top-slider__item-content">
+              <h1 class="top-slider__title title">
+                Собственная современная лаборатория
+              </h1>
+            </div>
+            <div class="top-slider__imgbox">
+              <img class="top-slider__img" src="images/slider/4.png" alt="sliderimg">
+            </div>
           </div>
-          <img class="top-slider__img" src="images/slider/3.png" alt="sliderimg">
-        </div>
-        <div class="top-slider__item">
-          <div class="top-slider__item-content">
-            <h1 class="top-slider__title title">
-              Собственная современная лаборатория
-            </h1>
+          <div class="top-slider__item">
+            <div class="top-slider__item-content">
+              <h1 class="top-slider__title title">
+                Аптека и зоомагазин по доступным ценам
+              </h1>
+            </div>
+            <div class="top-slider__imgbox">
+              <img class="top-slider__img" src="images/slider/5.png" alt="sliderimg">
+            </div>
           </div>
-          <img class="top-slider__img" src="images/slider/4.png" alt="sliderimg">
-        </div>
-        <div class="top-slider__item">
-          <div class="top-slider__item-content">
-            <h1 class="top-slider__title title">
-              Аптека и зоомагазин по доступным ценам
-            </h1>
+          <div class="top-slider__item">
+            <div class="top-slider__item-content">
+              <h1 class="top-slider__title title">
+                Груминг салон и косметические товары
+              </h1>
+            </div>
+            <div class="top-slider__imgbox">
+              <img class="top-slider__img" src="images/slider/6.png" alt="sliderimg">
+            </div>
           </div>
-          <img class="top-slider__img" src="images/slider/5.png" alt="sliderimg">
-        </div>
-        <div class="top-slider__item">
-          <div class="top-slider__item-content">
-            <h1 class="top-slider__title title">
-              Груминг салон и косметические товары
-            </h1>
-          </div>
-          <img class="top-slider__img" src="images/slider/6.png" alt="sliderimg">
         </div>
       </div>
     </div>
@@ -467,9 +442,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
       </div>
     </div>
   </div>
-  <section class="story">
 
-  </section>
   <section class="about">
     <div class="about__container">
       <div class="about-info">
@@ -600,6 +573,7 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
       </div>
     </div>
   </section>
+
   <section class="application">
     <p class="application-text">скоро</p>
     <h3 class="application-title">
@@ -612,7 +586,8 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
     <img src="images/application/3.png" alt="" class="application-img3">
     <img src="images/application/4.png" alt="" class="application-img4">
   </section>
-  <section class="contacts">
+
+  <!-- <section class="contacts">
     <div class="container">
       <h3 class="contacts-title">Контакты</h3>
       <div class="contacts-box">
@@ -642,53 +617,31 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
         </div>
       </div>
     </div>
-  </section>
-  <!-- andrikanich -->
-  <div class="wrapper">
-    <main class="page">
-      <div class="container">
-        <div class="page__side _side-wrapper">
-          <!-- <div class="page__item _side-block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias illo iste fugit quod minima
-            porro saepe quas cum. Debitis possimus eligendi tempora explicabo, quisquam cum numquam distinctio
-            doloremque
-            ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias illo iste fugit quod
-            minima porro saepe quas cum. Debitis possimus eligendi tempora explicabo, quisquam cum numquam distinctio
-            doloremque ducimus?
+  </section> -->
+
+  <div id="modal-1" data-modal class="fade-block hidden">
+    <div class="modal-window">
+      <div class="card">
+        <div class="card__close" data-modal-close>x</div>
+        <div class="card-body">
+          <div class="card-header">
+            <p>Ваш город</p>
           </div>
-        </div> -->
-
-          <div class="page__body">
-
-            <!-- <h1> Жми на кота</h1>
-
-            <a href="#video" data-video="TApQxW9YGnk" class="_popup-link"><img class="kote" src="images/kote.jpeg"
-                alt=""></a> -->
+          <div class="choice">
+            <ul class="choice-city">
+              <li class="choice-city__item" data-value="Грозный">Грозный</li>
+              <li class="choice-city__item" data-value="Волгоград">Волгоград</li>
+              <li class="choice-city__item" data-value="Самара">Самара</li>
+              <li class="choice-city__item" data-value="Самара">Санкт-Петербург</li>
+            </ul>
+            <input class="choice-city__input hidden" type="text" value="">
           </div>
         </div>
       </div>
-  </div>
-
-  <!-- <div class="popup popup_callback">
-    <div class="popup__content">
-      <div class="popup__body">
-        <div class="popup__close"></div>
-        porro magni unde nostrum fuga inventore ipsum sunt minus dolorem repellendus illum aliquam blanditiis
-        similique
-        quaerat!
-      </div>
     </div>
   </div>
 
-  <div class="popup popup_video">
-    <div class="popup__content">
-      <div class="popup__body">
-        <div class="popup__close popup__close_video"></div>
-        <div class="popup__video _video"></div>
-      </div>
-    </div>
-  </div> -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer-nav">
@@ -762,12 +715,11 @@ https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css
       </div>
 
     </div>
-  </footer>
+  </footer> -->
 
 </body>
-<script src="
-https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js
-"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js"></script>
+<script src="js/forms.js"></script>
 <script src="js/main.min.js"></script>
 
 </html>
