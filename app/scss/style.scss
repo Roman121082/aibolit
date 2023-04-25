@@ -459,10 +459,37 @@
   @include adaptiv-value (margin-bottom, 130, 50, 1);
   background-color: #FFC59E;
   padding-top: 250px;
-  padding-left: 230px;
-  height: 1080px;
+  max-height: 1080px;
   position: relative;
+
+  @media(max-width: 1305px) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
 }
+
+.application__inner {
+  display: flex;
+  gap: 3px;
+
+  @media(max-width: 1305px) {
+    display: block;
+  }
+}
+
+.application__ifo-box {
+  margin-left: auto;
+
+  @media(max-width: 1305px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
 
 .application-text {
   @extend %futura-400;
@@ -470,20 +497,34 @@
   line-height: 20px;
   color: #fff;
   padding-bottom: 30px;
+  display: inline-block;
 }
 
 .application-title {
-  width: 830px;
+  max-width: 830px;
   @extend %school-400;
   font-size: 80px;
-  line-height: 110px;
+  line-height: 1.2;
   color: #fff;
   margin-bottom: 30px;
+  position: relative;
+
+  @media(max-width: 1550px) {
+    font-size: 60px;
+  }
+
+  @media(max-width: 1305px) {
+    @include adaptiv-font (60, 30, 1);
+    display: inline-block;
+    max-width: 700px;
+  }
+
+
 }
 
 .application-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 375px;
   gap: 16px;
@@ -491,18 +532,49 @@
   &__img1 {
     height: 49px;
   }
+
+  @media(max-width: 400px) {
+    display: block;
+    width: 290px;
+  }
 }
 
-.application-img3 {
-  position: absolute;
-  right: 505px;
-  bottom: 170px;
+
+.application__grafics-box {
+  position: relative;
+  height: 700px;
+  width: 560px;
+  overflow: visible;
+  margin-right: auto;
+
+  @media(max-width: 1305px) {
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  @media(max-width: 570px) {
+    height: 320px;
+    width: 290px;
+  }
+
 }
 
-.application-img4 {
+.application-graf {
   position: absolute;
-  right: 275px;
-  bottom: 113px;
+  left: -115px;
+  top: -43px;
+
+  @media(max-width: 1550px) {
+    left: -200px;
+  }
+
+  @media(max-width: 1305px) {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 
@@ -525,6 +597,12 @@
   color: #59443F;
   font-size: 20px;
   line-height: 30px;
+  gap: 20px;
+
+  @media(max-width: 1200px) {
+    display: block;
+  }
+
 }
 
 .contacts-info {
@@ -547,6 +625,21 @@
   }
 }
 
+.contacts-map {}
+
+.contacts-map iframe {}
+
+.contacts-map iframe {
+  @media(max-width: 1450px) {
+    width: 700px;
+    height: 390px;
+  }
+
+  @media(max-width: 1200px) {
+    width: 100%;
+    height: calc((100vw/950)*530);
+  }
+}
 
 .footer {
   background-color: #59443F;
@@ -560,29 +653,46 @@
     justify-content: space-between;
     padding-top: 80px;
     padding-bottom: 60px;
+
+    @media(max-width:650px) {
+      display: block;
+    }
   }
 
   &__logo {
     display: flex;
   }
 
-  .fotter-title {
+  .footter-title {
     @extend %school-700;
     font-size: 50px;
     line-height: 45px;
     margin-bottom: 30px;
   }
 
-  .fotter-title span {
+  .footter-title span {
     @extend %futura-400;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 30px;
+    text-transform: uppercase;
+  }
+
+
+  &-social {
+    @media(max-width:650px) {
+      margin-top: 35px;
+    }
   }
 
   &__social-list {
     display: flex;
     gap: 50px;
     margin-bottom: 30px;
+
+    @media(max-width: 370px) {
+      gap: 30px;
+      justify-content: center;
+    }
   }
 
 }
@@ -592,6 +702,10 @@
   justify-content: flex-start;
   flex-grow: 1;
 
+  @media(max-width:1050px) {
+    display: block;
+  }
+
   &__list {
     max-width: 220px;
   }
@@ -599,8 +713,18 @@
   &__list+.footer-nav__list {
     margin-left: 100px;
     padding-top: 120px;
+
+    @media(max-width:1200px) {
+      margin-left: 40px;
+    }
+
+    @media(max-width:1050px) {
+      margin-left: 0;
+      padding-top: 35px;
+    }
   }
 }
+
 
 .logo {
   margin-right: 25px;
@@ -608,9 +732,14 @@
 
 .footer-box {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
   margin-bottom: 30px;
+
+  @media(max-width:450px) {
+    gap: 5px;
+    transform: translateX(-16px);
+  }
 }
 
 .footer-mail {
@@ -627,4 +756,4 @@
 }
 
 
-@import "media";
+@import "media"
