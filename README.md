@@ -1,1 +1,1 @@
-[# https://github.com/Roman121082/aibolit.git]
+https://github.com/Roman121082/aibolit.git
